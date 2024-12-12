@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: my_vits_app_container
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    ports:
+      - "8000:8000"
+    # environment:
+    #   - PYTHONDONTWRITEBYTECODE=1
+    #   - PYTHONUNBUFFERED=1
+    # env_file:
+    #   - .env
+
+    volumes:
+      - .:/app
+
