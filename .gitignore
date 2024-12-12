@@ -47,6 +47,7 @@ coverage.xml
 *.env
 
 *.pkl
+*.tar.gz
 *.jpg
 *.pth
 *.pyc
